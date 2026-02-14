@@ -9,8 +9,8 @@ public class Invoice {
     public Invoice(String partNumber, String description, Integer quantity, Double price) {
         this.partNumber = partNumber;
         this.description = description;
-        this.quantity = quantity;
-        this.price = price;
+        setQuantity(quantity);
+        setPrice(price);
     }
 
     public String getPartNumber() {
